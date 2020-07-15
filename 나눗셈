@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+    //소수점 이하를 출력하고 싶을 때는 double을 사용
+
+		System.out.println(a/b);
+	}
+
+}
+ 
