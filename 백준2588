@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		int sb= b/100;
+		int ssb= b/10-sb*10;
+		int sssb=b-sb*100-ssb*10;
+		
+		System.out.println(a*sssb);
+		System.out.println(a*ssb);
+		System.out.println(a*sb);
+		System.out.println(a*b);
+	}
+
+}
