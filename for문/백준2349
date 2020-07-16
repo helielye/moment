@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main {//좌우반전된 직각삼각형 모양 별 찍기. 어려웠다.
+    public static void main(String[] args) throws Exception{
+    	Scanner sc = new Scanner(System.in);
+    	int l = sc.nextInt();
+    	
+    	for(int i=l;i>0;i--) {
+    		for(int j=i;j>1;j--) {
+    			System.out.print(" ");
+    		}
+    		for(int k=0;k<=l-i;k++) {
+    			System.out.print("*");
+    		}
+    		System.out.println();
+    	}    	
+    }
+}
