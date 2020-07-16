@@ -1,10 +1,8 @@
-import java.io.*;
 import java.util.Scanner;
 public class Main {//첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 < A, B < 10)
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Scanner sc = new Scanner(System.in);
 		int l = sc.nextInt();
 		int a=0,b=0;
@@ -19,4 +17,4 @@ public class Main {//첫째 줄에 테스트 케이스의 개수 T가 주어진�
 		}
 	}
 
-}
+}//출력값이 한꺼번에 나오는 경우
