@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception{
+    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    	BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+    	int[] arr = {0,0,0,0,0,0,0,0,0,0};//0~9 개수 셀 배열 생성
+    	
+    	int A=Integer.parseInt(br.readLine());
+    	int B=Integer.parseInt(br.readLine());
+    	int C=Integer.parseInt(br.readLine());//A,B,C 입력받고
+    	int multiple=A*B*C;//곱한 뒤
+    	
+    	String temp=Integer.toString(multiple);//곱한 수를 문자열로 변환
+    	int[] digits = new int[temp.length()];
+    	int a;//digits원소 넣을 자리이자, arr배열 원소의 순서가 될 자리
+    	for(int i=0;i<temp.length();i++) {
+    		digits[i]=temp.charAt(i)-'0';
+    		a=digits[i];
+    		arr[a]+=1;
+    	}
+    	for(int i=0;i<10;i++) {
+    		System.out.println(arr[i]);
+    	}
+    	bw.flush();
+    	bw.close();
+    }
+}
